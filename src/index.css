@@ -1,0 +1,26 @@
+/* src/index.css */
+
+/*
+  Este archivo es para estilos CSS globales o reseteos.
+  Dado que la aplicación usa Tailwind CSS, muchos de los estilos
+  específicos de los componentes se aplicarán directamente en el JSX.
+*/
+
+/* Un reset básico para asegurar consistencia entre navegadores */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye padding y border en el ancho/alto total */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Puedes añadir aquí otros estilos globales si los necesitas,
+     por ejemplo, para elementos HTML que no estén cubiertos por Tailwind
+     o para personalizar el scrollbar, etc. */
+  
+  /* Ejemplo: Estilos para elementos de enfoque para accesibilidad */
+  :focus {
+    outline: 2px solid theme('colors.blue.500'); /* Usa el color primario de Tailwind */
+    outline-offset: 2px;
+  }
